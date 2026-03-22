@@ -1,0 +1,98 @@
+<div class="bible-reader">
+  <!-- Sidebar -->
+  <aside class="bible-reader__sidebar">
+    <div class="bible-reader__search">
+      <input
+        type="text"
+        placeholder="Search books..."
+        [ngModel]="searchTerm()"
+        (ngModelChange)="searchTerm.set($event)"
+        class="bible-reader__search-input"
+      />
+    </div>
+
+    <div class="bible-reader__book-list">
+      @if (oldTestamentBooks().length) {
+        <h3 class="bible-reader__testament-heading">Old Testament</h3>
+        @for (book of oldTestamentBooks(); track book.name) {
+          <button
+            type="button"
+            class="bible-reader__book-button"
+            [class.bible-reader__book-button--active]="selectedBook()?.name === book.name"
+            (click)="selectBook(book)"
+          >
+            {{ book.name }}
+          </button>
+        }
+      }
+
+      @if (newTestamentBooks().length) {
+        <h3 class="bible-reader__testament-heading">New Testament</h3>
+        @for (book of newTestamentBooks(); track book.name) {
+          <button
+            type="button"
+            class="bible-reader__book-button"
+            [class.bible-reader__book-button--active]="selectedBook()?.name === book.name"
+            (click)="selectBook(book)"
+          >
+            {{ book.name }}
+          </button>
+        }
+      }
+    </div>
+  </aside>
+
+  <!-- Reading Pane -->
+  <main class="bible-reader__content">
+    @if (!selectedBook()) {
+      <p class="bible-reader__placeholder">Select a book to begin reading.</p>
+    }
+
+    @if (selectedBook()) {
+      <h2 class="bible-reader__header">{{ headerText() }}</h2>
+
+      <gw-chapter-nav
+        [currentChapter]="selectedChapter()"
+        [totalChapters]="totalChapters()"
+        [hasPrevious]="hasPrevious()"
+        [hasNext]="hasNext()"
+        (previousClicked)="goToPreviousChapter()"
+        (nextClicked)="goToNextChapter()"
+        (chapterSelected)="onChapterSelected()"
+      />
+
+      @if (loading()) {
+        <div class="bible-reader__loading" aria-live="polite">
+          <span class="bible-reader__spinner"></span>
+          Loading...
+        </div>
+      }
+
+      @if (error(); as errorMessage) {
+        <div class="bible-reader__error" role="alert">
+          {{ errorMessage }}
+        </div>
+      }
+
+      @if (!loading() && !error() && chapterData(); as chapter) {
+        <section class="bible-reader__verses">
+          @for (verse of chapter.verses; track verse.verse) {
+            <gw-verse-item [number]="verse.verse" [text]="verse.text" />
+          }
+        </section>
+
+        <p class="bible-reader__translation">{{ chapter.translation }}</p>
+
+        <gw-chapter-nav
+          [currentChapter]="selectedChapter()"
+          [totalChapters]="totalChapters()"
+          [hasPrevious]="hasPrevious()"
+          [hasNext]="hasNext()"
+          (previousClicked)="goToPreviousChapter()"
+          (nextClicked)="goToNextChapter()"
+          (chapterSelected)="onChapterSelected()"
+        />
+      }
+    }
+  </main>
+</div>

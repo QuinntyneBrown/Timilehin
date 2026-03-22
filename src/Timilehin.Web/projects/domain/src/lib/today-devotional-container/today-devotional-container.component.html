@@ -1,0 +1,23 @@
+@if (loading()) {
+  <div class="loading-indicator" aria-label="Loading today's devotional">
+    <span class="spinner"></span>
+    <p>Loading today's devotional...</p>
+  </div>
+} @else if (error()) {
+  <div class="error-message" role="alert">
+    <p>{{ error() }}</p>
+  </div>
+} @else if (notFound()) {
+  <div class="no-devotional-message" role="status">
+    <p>No devotional for today.</p>
+  </div>
+} @else if (devotional(); as d) {
+  <gw-section-label icon="book" text="Today's Devotional" />
+  <p class="devotional-date">{{ d.date }}</p>
+  <gw-devotional-card
+    [title]="d.title"
+    [scriptureReference]="d.scriptureReference"
+    [reflectionText]="d.reflectionText"
+    [prayerPrompt]="d.prayerPrompt"
+  />
+}

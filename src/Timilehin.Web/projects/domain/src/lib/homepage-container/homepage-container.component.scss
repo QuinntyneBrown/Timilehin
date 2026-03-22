@@ -1,0 +1,15 @@
+:host {
+  display: block;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 3rem 2rem;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="devotional-page-layout">
+  <div class="column-today">
+    <gw-today-devotional-container />
+
+    @if (selectedLoading()) {
+      <div class="loading-indicator" aria-label="Loading selected devotional">
+        <span class="spinner"></span>
+        <p>Loading devotional...</p>
+      </div>
+    } @else if (selectedError()) {
+      <div class="error-message" role="alert">
+        <p>{{ selectedError() }}</p>
+      </div>
+    } @else if (selectedDevotional(); as d) {
+      <div class="selected-devotional">
+        <gw-devotional-card
+          [title]="d.title"
+          [scriptureReference]="d.scriptureReference"
+          [reflectionText]="d.reflectionText"
+          [prayerPrompt]="d.prayerPrompt"
+        />
+      </div>
+    }
+  </div>
+
+  <div class="column-archive">
+    <gw-devotional-archive-container
+      (devotionalSelected)="onDevotionalSelected($event)"
+    />
+  </div>
+</div>

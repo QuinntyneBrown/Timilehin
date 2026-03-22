@@ -1,0 +1,34 @@
+<gw-hero
+  tagText="Your Daily Spiritual Companion"
+  title="Discover God's Word, Every Day"
+  description="Read the Bible, explore daily devotionals, and find inspiration through the Verse of the Day. Your journey of faith starts here."
+  primaryButtonLabel="Start Reading"
+  secondaryButtonLabel="Explore Devotionals"
+  (primaryClicked)="onPrimaryClicked()"
+  (secondaryClicked)="onSecondaryClicked()"
+/>
+
+<gw-verse-of-the-day-container />
+
+<section class="features">
+  <gw-feature-card
+    title="Read the Bible"
+    description="Explore the complete Bible with a clean, distraction-free reading experience. Navigate by book and chapter using our integrated reader powered by a free Bible API."
+    [tags]="['Genesis', 'Psalms', 'Proverbs', 'John']"
+    linkText="Start Reading"
+    (linkClicked)="onBibleCardClicked()"
+  />
+
+  <gw-feature-card
+    title="Daily Devotionals"
+    description="Deepen your faith with daily devotional readings. Each entry includes a scripture reference, thoughtful reflection, and a prayer prompt to guide your spiritual journey."
+    linkText="Read More"
+    iconColor="#D4A574"
+    (linkClicked)="onDevotionalCardClicked()"
+  />
+</section>
+
+<gw-footer
+  [links]="footerLinks"
+  (linkClicked)="onFooterLinkClicked($event)"
+/>

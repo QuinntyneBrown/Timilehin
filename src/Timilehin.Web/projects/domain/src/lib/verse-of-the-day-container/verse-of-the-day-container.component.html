@@ -1,0 +1,15 @@
+@if (loading()) {
+  <div class="loading-indicator" aria-label="Loading verse of the day">
+    <span class="spinner"></span>
+    <p>Loading verse of the day…</p>
+  </div>
+} @else if (error()) {
+  <div class="error-message" role="alert">
+    <p>{{ error() }}</p>
+  </div>
+} @else if (verse(); as v) {
+  <gw-verse-of-the-day-card
+    [verseText]="v.text"
+    [reference]="v.reference"
+  />
+}
