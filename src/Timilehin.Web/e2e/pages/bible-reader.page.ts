@@ -64,7 +64,7 @@ export class BibleReaderPage {
   }
 
   async clickNextChapter() {
-    await this.page.locator('.chapter-nav__next').click();
+    await this.page.locator('.chapter-nav__next').first().click();
   }
 
   async searchBooks(term: string) {
