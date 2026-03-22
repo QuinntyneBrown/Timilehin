@@ -5,11 +5,8 @@
 .devotional-page-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  gap: 32px;
+  padding: 48px 56px;
 }
 
 .column-today,
@@ -53,6 +50,23 @@
     margin: 0;
     font-size: 0.875rem;
     color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+// Tablet breakpoint
+@media (max-width: 768px) {
+  .devotional-page-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 32px 32px;
+  }
+}
+
+// Mobile breakpoint
+@media (max-width: 480px) {
+  .devotional-page-layout {
+    gap: 16px;
+    padding: 24px 16px;
   }
 }
 
