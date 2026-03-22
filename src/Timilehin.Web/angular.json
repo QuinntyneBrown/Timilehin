@@ -142,7 +142,8 @@
               "buildTarget": "timilehin:build:production"
             },
             "development": {
-              "buildTarget": "timilehin:build:development"
+              "buildTarget": "timilehin:build:development",
+              "proxyConfig": "projects/timilehin/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
