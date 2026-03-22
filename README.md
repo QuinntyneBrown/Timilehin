@@ -1,22 +1,14 @@
 # Timilehin
 
-Timilehin is a scripture-focused project built around a .NET Web API, an Angular workspace, and product/design documentation. The backend serves Bible chapters, a cached verse of the day, and devotional content; the frontend workspace currently contains reusable Angular libraries that are intended to power a future UI.
+A scripture-focused web application built with a .NET Web API backend and an Angular frontend. Read the Bible, explore daily devotionals, and find inspiration through the Verse of the Day.
 
 ## Overview
 
-The repository currently includes:
-
 - A REST API in ASP.NET Core for Bible reading and devotionals
 - SQLite-backed persistence for devotionals and daily verse caching
-- An Angular workspace with an API client library and a component library
+- An Angular workspace with three libraries (`api`, `components`, `domain`) and a browser app
 - xUnit integration tests covering the API behavior
 - Product requirements and a UI prototype under `docs/`
-
-## Current Status
-
-- The API is implemented and testable today
-- The Angular workspace is present, but it does not yet include a finished browser app
-- The `components` library is still scaffold-level and intended to evolve with the UI work
 
 ## Features
 
@@ -29,10 +21,12 @@ The repository currently includes:
 - Fetch today's devotional by date
 - Expose an OpenAPI document in development
 
-### Frontend Workspace
+### Frontend
 
-- `api` Angular library with typed services for the REST API
-- `components` Angular library for shared UI building blocks
+- **`api`** library — typed models and HTTP services for every backend endpoint
+- **`components`** library — presentational UI building blocks (navbar, hero, verse card, devotional card, chapter nav, footer, etc.)
+- **`domain`** library — smart container components that wire API services to presentational components with loading/error state management
+- **`timilehin`** app — routes, global styles, and page shells that compose the domain containers
 
 ## Tech Stack
 
@@ -48,12 +42,20 @@ The repository currently includes:
 .
 |-- docs/
 |   |-- specs/
-|   |   |-- L1.md
-|   |   `-- L2.md
-|   `-- ui-design.pen
+|   |   |-- L1.md            # High-level requirements
+|   |   `-- L2.md            # Detailed requirements & acceptance criteria
+|   `-- ui-design.pen        # UI design prototype
+|-- eng/
+|   `-- scripts/
+|       `-- run-all.bat       # Build libs, start backend + frontend
 |-- src/
-|   |-- Timilehin.Api/
-|   `-- Timilehin.Web/
+|   |-- Timilehin.Api/        # .NET Web API
+|   `-- Timilehin.Web/        # Angular workspace
+|       `-- projects/
+|           |-- api/           # API client library
+|           |-- components/    # Presentational components
+|           |-- domain/        # Smart container components
+|           `-- timilehin/     # Browser application
 |-- tests/
 |   `-- Timilehin.Api.Tests/
 |-- CONTRIBUTING.md
@@ -69,19 +71,27 @@ The repository currently includes:
 - [.NET 11 SDK preview](https://dotnet.microsoft.com/download)
 - Node.js and npm
 
-### Run the API
+### Run everything
+
+The easiest way to start both the backend and frontend:
+
+```bat
+eng\scripts\run-all.bat
+```
+
+This builds the Angular libraries in dependency order, then launches the API on port 5256 and the Angular dev server on port 4200.
+
+### Run the API only
 
 ```bash
 dotnet restore Timilehin.slnx
 dotnet run --project src/Timilehin.Api
 ```
 
-Notes:
-
-- The SQLite database is created automatically on startup using `ConnectionStrings:DefaultConnection`
+- The SQLite database is created automatically on startup
 - CORS origins come from `src/Timilehin.Api/appsettings.json`
 - Default development URLs are `http://localhost:5256` and `https://localhost:7264`
-- In development, the OpenAPI document is available at `/openapi/v1.json`
+- OpenAPI document available at `/openapi/v1.json` in development
 
 ### Run API tests
 
@@ -89,21 +99,23 @@ Notes:
 dotnet test Timilehin.slnx
 ```
 
-### Build the Angular libraries
+### Build the Angular libraries manually
 
 ```bash
 cd src/Timilehin.Web
 npm install
 npx ng build api
 npx ng build components
+npx ng build domain
 ```
 
-Optional library tests:
+### Run library tests
 
 ```bash
 cd src/Timilehin.Web
 npx ng test api --watch=false
 npx ng test components --watch=false
+npx ng test domain --watch=false
 ```
 
 ## API Surface
@@ -130,13 +142,8 @@ curl "https://localhost:7264/api/bible/Genesis/1"
 
 Key settings live in `src/Timilehin.Api/appsettings.json`:
 
-- `ConnectionStrings:DefaultConnection` configures the SQLite database
-- `Cors:Origins` lists allowed frontend origins
-
-The default checked-in origins are:
-
-- `http://localhost:3000`
-- `http://localhost:5173`
+- `ConnectionStrings:DefaultConnection` — SQLite database path
+- `Cors:Origins` — allowed frontend origins (defaults: `http://localhost:3000`, `http://localhost:5173`)
 
 ## Documentation
 
