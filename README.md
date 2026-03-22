@@ -54,6 +54,10 @@ src/
     └── Services/       # Business logic
 ```
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
 ## License
 
-This project is unlicensed. All rights reserved.
+This project is licensed under the [MIT License](LICENSE).
