@@ -8,6 +8,7 @@ A scripture-focused web application built with a .NET Web API backend and an Ang
 - SQLite-backed persistence for devotionals and daily verse caching
 - An Angular workspace with three libraries (`api`, `components`, `domain`) and a browser app
 - xUnit integration tests covering the API behavior
+- Playwright end-to-end tests for user flows and spacing verification
 - Product requirements and a UI prototype under `docs/`
 
 ## Screenshots
@@ -61,6 +62,7 @@ A scripture-focused web application built with a .NET Web API backend and an Ang
 ```text
 .
 |-- docs/
+|   |-- screenshots/          # README screenshots (desktop, tablet, mobile)
 |   |-- specs/
 |   |   |-- L1.md            # High-level requirements
 |   |   `-- L2.md            # Detailed requirements & acceptance criteria
@@ -137,6 +139,15 @@ npx ng test api --watch=false
 npx ng test components --watch=false
 npx ng test domain --watch=false
 ```
+
+### Run Playwright E2E tests
+
+```bash
+cd src/Timilehin.Web
+npx playwright test
+```
+
+Tests will automatically start the backend and frontend dev servers if they are not already running.
 
 ## API Surface
 
