@@ -10,6 +10,26 @@ A scripture-focused web application built with a .NET Web API backend and an Ang
 - xUnit integration tests covering the API behavior
 - Product requirements and a UI prototype under `docs/`
 
+## Screenshots
+
+### Homepage
+
+| Desktop | Tablet | Mobile |
+| --- | --- | --- |
+| ![Homepage Desktop](docs/screenshots/homepage-desktop.png) | ![Homepage Tablet](docs/screenshots/homepage-tablet.png) | ![Homepage Mobile](docs/screenshots/homepage-mobile.png) |
+
+### Bible Reader
+
+| Desktop | Tablet | Mobile |
+| --- | --- | --- |
+| ![Bible Reader Desktop](docs/screenshots/bible-reader-desktop.png) | ![Bible Reader Tablet](docs/screenshots/bible-reader-tablet.png) | ![Bible Reader Mobile](docs/screenshots/bible-reader-mobile.png) |
+
+### Devotionals
+
+| Desktop | Tablet | Mobile |
+| --- | --- | --- |
+| ![Devotionals Desktop](docs/screenshots/devotionals-desktop.png) | ![Devotionals Tablet](docs/screenshots/devotionals-tablet.png) | ![Devotionals Mobile](docs/screenshots/devotionals-mobile.png) |
+
 ## Features
 
 ### API

@@ -137,4 +137,24 @@ test.describe('UI Design Verification — Spacing & Layout', () => {
       expect(brightness).toBeLessThan(80);
     }
   });
+
+  test('navbar is sticky and stays at top when scrolling', async ({ page }) => {
+    const navbarHost = page.locator('gw-navbar').first();
+    await expect(navbarHost).toBeVisible();
+
+    const position = await navbarHost.evaluate(
+      (el) => getComputedStyle(el).position
+    );
+    expect(position).toBe('sticky');
+
+    const top = await navbarHost.evaluate(
+      (el) => getComputedStyle(el).top
+    );
+    expect(top).toBe('0px');
+
+    const zIndex = await navbarHost.evaluate(
+      (el) => getComputedStyle(el).zIndex
+    );
+    expect(parseInt(zIndex)).toBeGreaterThanOrEqual(100);
+  });
 });

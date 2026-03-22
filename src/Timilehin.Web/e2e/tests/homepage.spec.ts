@@ -24,6 +24,10 @@ test.describe('Homepage', () => {
     await homePage.expectFeatureCardsVisible();
   });
 
+  test('should display icons inside feature cards', async () => {
+    await homePage.expectFeatureCardIconsVisible();
+  });
+
   test('should display the footer', async () => {
     await homePage.expectFooterVisible();
   });

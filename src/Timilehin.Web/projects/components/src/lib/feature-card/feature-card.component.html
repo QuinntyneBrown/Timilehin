@@ -1,5 +1,8 @@
 <div class="feature-card">
   <div class="feature-card__icon" [style.background-color]="iconColor()">
+    @if (iconSvg()) {
+      <span class="feature-card__icon-svg" [innerHTML]="iconSvg()"></span>
+    }
     <ng-content></ng-content>
   </div>
   <h3 class="feature-card__title">{{ title() }}</h3>

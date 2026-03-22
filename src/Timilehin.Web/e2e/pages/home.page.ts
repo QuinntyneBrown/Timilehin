@@ -9,6 +9,7 @@ export class HomePage {
   readonly secondaryCta: Locator;
   readonly verseOfTheDaySection: Locator;
   readonly featureCards: Locator;
+  readonly featureCardIcons: Locator;
   readonly footer: Locator;
 
   constructor(page: Page) {
@@ -20,6 +21,7 @@ export class HomePage {
     this.secondaryCta = page.locator('.hero__button--secondary');
     this.verseOfTheDaySection = page.locator('gw-verse-of-the-day-card');
     this.featureCards = page.locator('gw-feature-card');
+    this.featureCardIcons = page.locator('.feature-card__icon svg');
     this.footer = page.locator('gw-footer');
   }
 
@@ -47,6 +49,13 @@ export class HomePage {
 
   async expectFeatureCardsVisible() {
     await expect(this.featureCards.first()).toBeVisible();
+  }
+
+  async expectFeatureCardIconsVisible() {
+    await expect(this.featureCardIcons).toHaveCount(2);
+    for (const icon of await this.featureCardIcons.all()) {
+      await expect(icon).toBeVisible();
+    }
   }
 
   async expectFooterVisible() {
