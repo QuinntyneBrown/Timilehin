@@ -1,3 +1,6 @@
 <Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/Timilehin.Api.Tests/Timilehin.Api.Tests.csproj" />
+  </Folder>
   <Project Path="src/Timilehin.Api/Timilehin.Api.csproj" />
 </Solution>
