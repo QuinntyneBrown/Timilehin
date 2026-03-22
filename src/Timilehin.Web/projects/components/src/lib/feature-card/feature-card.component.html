@@ -1,0 +1,20 @@
+<div class="feature-card">
+  <div class="feature-card__icon" [style.background-color]="iconColor()">
+    <ng-content></ng-content>
+  </div>
+  <h3 class="feature-card__title">{{ title() }}</h3>
+  <p class="feature-card__description">{{ description() }}</p>
+  @if (tags().length) {
+    <div class="feature-card__tags">
+      @for (tag of tags(); track tag) {
+        <span class="feature-card__tag">{{ tag }}</span>
+      }
+    </div>
+  }
+  @if (linkText()) {
+    <a class="feature-card__link" (click)="linkClicked.emit()">
+      <span class="feature-card__link-text">{{ linkText() }}</span>
+      <span class="feature-card__link-arrow">&rarr;</span>
+    </a>
+  }
+</div>

@@ -1,0 +1,84 @@
+@use '../variables' as *;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: $spacing-lg $spacing-5xl;
+  background: $bg-primary;
+  box-sizing: border-box;
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+  }
+
+  &__brand-name {
+    font-family: $font-display;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 700;
+    color: $text-primary;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: $spacing-2xl;
+  }
+
+  &__link {
+    font-family: $font-body;
+    font-size: 14px;
+    font-weight: 400;
+    color: $text-secondary;
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+
+    &--active {
+      font-weight: 600;
+      color: $text-primary;
+    }
+  }
+
+  &__cta {
+    font-family: $font-body;
+    font-size: 14px;
+    font-weight: 500;
+    background: $bg-dark;
+    color: $text-white;
+    padding: $spacing-md $spacing-xl;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  &__hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px $spacing-lg;
+
+    &__links,
+    &__cta {
+      display: none;
+    }
+
+    &__hamburger {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

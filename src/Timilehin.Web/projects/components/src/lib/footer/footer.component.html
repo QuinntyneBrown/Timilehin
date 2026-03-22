@@ -1,0 +1,18 @@
+<footer class="footer">
+  <div class="footer__brand">
+    <div class="footer__brand-logo">
+      <ng-content select="[logo]"></ng-content>
+      <span class="footer__brand-name">{{ brandName() }}</span>
+    </div>
+    <span class="footer__copyright">{{ copyright() }}</span>
+  </div>
+  <div class="footer__links">
+    @for (link of links(); track link.url) {
+      <a class="footer__link" (click)="linkClicked.emit(link)">{{ link.label }}</a>
+    }
+  </div>
+  <div class="footer__powered-by">
+    <span class="footer__powered-by-label">{{ poweredByLabel() }}</span>
+    <span class="footer__powered-by-name">{{ poweredByName() }}</span>
+  </div>
+</footer>

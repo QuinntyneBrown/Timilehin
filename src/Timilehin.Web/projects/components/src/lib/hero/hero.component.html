@@ -1,0 +1,20 @@
+<section class="hero">
+  <div class="hero__content">
+    @if (tagText()) {
+      <span class="hero__tag">{{ tagText() }}</span>
+    }
+    <h1 class="hero__title">{{ title() }}</h1>
+    <p class="hero__description">{{ description() }}</p>
+    <div class="hero__actions">
+      @if (primaryButtonLabel()) {
+        <button class="hero__button hero__button--primary" (click)="primaryClicked.emit()">{{ primaryButtonLabel() }}</button>
+      }
+      @if (secondaryButtonLabel()) {
+        <button class="hero__button hero__button--secondary" (click)="secondaryClicked.emit()">{{ secondaryButtonLabel() }}</button>
+      }
+    </div>
+  </div>
+  <div class="hero__media">
+    <ng-content></ng-content>
+  </div>
+</section>

@@ -1,0 +1,46 @@
+@use '../variables' as *;
+
+.devotional-summary {
+  background: $bg-card;
+  border: 1px solid $border-light;
+  padding: $spacing-lg;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    border-color: $border-dark;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  &__date {
+    font-family: $font-body;
+    font-size: 11px;
+    color: $text-muted;
+  }
+
+  &__title {
+    font-family: $font-display;
+    font-style: italic;
+    font-size: 18px;
+    color: $text-primary;
+    margin: 0;
+  }
+
+  &__excerpt {
+    font-family: $font-body;
+    font-size: 13px;
+    color: $text-secondary;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  &__reference {
+    font-family: $font-body;
+    font-size: 12px;
+    font-weight: 500;
+    color: $accent-warm;
+  }
+}

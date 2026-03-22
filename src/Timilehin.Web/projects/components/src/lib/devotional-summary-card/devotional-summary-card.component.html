@@ -1,0 +1,8 @@
+<article class="devotional-summary" (click)="cardClicked.emit()">
+  <span class="devotional-summary__date">{{ date() }}</span>
+  <h3 class="devotional-summary__title">{{ title() }}</h3>
+  @if (excerpt()) {
+    <p class="devotional-summary__excerpt">{{ excerpt() }}</p>
+  }
+  <span class="devotional-summary__reference">{{ scriptureReference() }}</span>
+</article>

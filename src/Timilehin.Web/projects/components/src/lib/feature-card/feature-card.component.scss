@@ -1,0 +1,93 @@
+@use '../variables' as *;
+
+.feature-card {
+  background-color: $bg-secondary;
+  padding: $spacing-3xl $spacing-2xl;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+  width: 100%;
+  box-sizing: border-box;
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: $font-display;
+    font-style: italic;
+    font-size: 28px;
+    color: $text-primary;
+    margin: 0;
+  }
+
+  &__description {
+    font-family: $font-body;
+    font-size: 15px;
+    color: $text-secondary;
+    line-height: 1.6;
+    width: 100%;
+    margin: 0;
+  }
+
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  &__tag {
+    background-color: #ffffff;
+    border: 1px solid $border-light;
+    padding: 8px 16px;
+    font-family: $font-body;
+    font-size: 13px;
+    color: $text-primary;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__link-text {
+    font-family: $font-body;
+    font-size: 14px;
+    font-weight: 600;
+    color: $accent-gold;
+  }
+
+  &__link-arrow {
+    font-size: 14px;
+    color: $accent-gold;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    padding: $spacing-xl $spacing-base;
+    gap: $spacing-base;
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+
+    &__tag {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+}

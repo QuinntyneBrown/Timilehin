@@ -1,0 +1,40 @@
+@use '../variables' as *;
+
+.button {
+  font-family: $font-body;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  padding: 12px 24px;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &--primary {
+    background-color: $bg-dark;
+    color: $text-white;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    border: 1px solid $accent-gold;
+    color: $accent-gold;
+
+    &:hover {
+      background-color: rgba($accent-gold, 0.08);
+    }
+  }
+
+  &--gold {
+    background-color: $accent-gold;
+    color: $bg-dark;
+  }
+
+  &__label {
+    pointer-events: none;
+  }
+}

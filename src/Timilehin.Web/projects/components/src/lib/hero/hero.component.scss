@@ -1,0 +1,147 @@
+@use '../variables' as *;
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 480px;
+  padding: 0 $spacing-5xl;
+  background: linear-gradient(135deg, #2d2b3d 0%, #1a1a2e 60%, #3d2b4d 100%);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xl;
+    max-width: 560px;
+    padding: $spacing-5xl 0;
+  }
+
+  &__tag {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 6px $spacing-base;
+    border-radius: 20px;
+    background-color: rgba($accent-gold, 0.13);
+    color: $accent-gold;
+    font-family: $font-body;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  &__title {
+    margin: 0;
+    color: $text-white;
+    font-family: $font-display;
+    font-size: 56px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -2px;
+    line-height: 1.1;
+  }
+
+  &__description {
+    margin: 0;
+    max-width: 480px;
+    color: #b8b8cc;
+    font-family: $font-body;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  &__actions {
+    display: flex;
+    gap: $spacing-base;
+    align-items: center;
+  }
+
+  &__button {
+    padding: $spacing-base $spacing-2xl;
+    border: none;
+    font-family: $font-body;
+    font-size: 15px;
+    cursor: pointer;
+
+    &--primary {
+      background-color: $accent-gold;
+      color: $bg-dark;
+      font-weight: 600;
+    }
+
+    &--secondary {
+      background-color: transparent;
+      border: 1px solid $accent-gold;
+      color: $accent-gold;
+      font-weight: 500;
+    }
+  }
+
+  &__media {
+    width: 420px;
+    height: 380px;
+    flex-shrink: 0;
+
+    ::ng-deep img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 400px;
+    padding: 0 $spacing-2xl;
+
+    &__content {
+      max-width: 500px;
+    }
+
+    &__title {
+      font-size: 40px;
+      letter-spacing: -1px;
+    }
+
+    &__media {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 360px;
+    padding: $spacing-3xl $spacing-lg;
+
+    &__content {
+      max-width: 100%;
+      gap: $spacing-base;
+    }
+
+    &__title {
+      font-size: 32px;
+      letter-spacing: -1px;
+    }
+
+    &__description {
+      font-size: 14px;
+      max-width: 100%;
+    }
+
+    &__actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__button {
+      padding: 14px $spacing-xl;
+      font-size: 14px;
+    }
+
+    &__media {
+      display: none;
+    }
+  }
+}

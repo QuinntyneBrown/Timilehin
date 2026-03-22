@@ -1,0 +1,9 @@
+<button
+  class="button"
+  [class.button--primary]="variant() === 'primary'"
+  [class.button--secondary]="variant() === 'secondary'"
+  [class.button--gold]="variant() === 'gold'"
+  (click)="clicked.emit()"
+>
+  <span class="button__label">{{ label() }}</span>
+</button>

@@ -1,0 +1,52 @@
+@use '../variables' as *;
+
+.prayer-prompt {
+  background-color: $bg-hero;
+  padding: $spacing-xl;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  width: 100%;
+  box-sizing: border-box;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $spacing-sm;
+
+    ::ng-deep > * {
+      font-size: 16px;
+      color: $accent-gold;
+    }
+  }
+
+  &__label {
+    font-family: $font-body;
+    font-size: 11px;
+    font-weight: 600;
+    color: $accent-gold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: $font-display;
+    font-style: italic;
+    font-size: 16px;
+    color: $text-cream;
+    line-height: 1.7;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .prayer-prompt {
+    padding: $spacing-base;
+
+    &__text {
+      font-size: 13px;
+    }
+  }
+}

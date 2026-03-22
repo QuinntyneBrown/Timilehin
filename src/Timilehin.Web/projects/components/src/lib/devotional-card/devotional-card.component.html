@@ -1,0 +1,21 @@
+<article class="devotional-card">
+  <h2 class="devotional-card__title">{{ title() }}</h2>
+  <div class="devotional-card__scripture">
+    <ng-content select="[scriptureIcon]"></ng-content>
+    <p class="devotional-card__scripture-text">
+      {{ scriptureReference() }}
+      @if (scriptureText()) {
+        — "{{ scriptureText() }}"
+      }
+    </p>
+  </div>
+  <span class="devotional-card__section-label">REFLECTION</span>
+  <div class="devotional-card__reflection">{{ reflectionText() }}</div>
+  <div class="devotional-card__prayer">
+    <div class="devotional-card__prayer-header">
+      <ng-content select="[prayerIcon]"></ng-content>
+      <span class="devotional-card__prayer-label">PRAYER PROMPT</span>
+    </div>
+    <p class="devotional-card__prayer-text">{{ prayerPrompt() }}</p>
+  </div>
+</article>

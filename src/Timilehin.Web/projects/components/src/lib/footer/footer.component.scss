@@ -1,0 +1,89 @@
+@use '../variables' as *;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: $spacing-3xl $spacing-5xl;
+  background: $bg-dark;
+  box-sizing: border-box;
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__brand-logo {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+  }
+
+  &__brand-name {
+    font-family: $font-display;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-white;
+  }
+
+  &__copyright {
+    font-family: $font-body;
+    font-size: 13px;
+    color: $text-muted;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xl;
+  }
+
+  &__link {
+    font-family: $font-body;
+    font-size: 13px;
+    color: $text-muted;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__powered-by {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: $spacing-xs;
+  }
+
+  &__powered-by-label {
+    font-family: $font-body;
+    font-size: 11px;
+    color: $text-muted;
+  }
+
+  &__powered-by-name {
+    font-family: $font-body;
+    font-size: 13px;
+    font-weight: 500;
+    color: $accent-gold;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: $spacing-xl;
+    padding: $spacing-xl $spacing-lg;
+
+    &__brand {
+      align-items: center;
+    }
+
+    &__powered-by {
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@use '../variables' as *;
+
+.chapter-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: $spacing-md;
+
+  &__prev,
+  &__next,
+  &__selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &__prev {
+    background: transparent;
+    border: 1px solid $border-light;
+    padding: $spacing-sm $spacing-base;
+    gap: 6px;
+  }
+
+  &__prev-text {
+    font-family: $font-body;
+    font-size: 13px;
+    color: $text-secondary;
+  }
+
+  &__selector {
+    background: $bg-secondary;
+    border: 1px solid $border-light;
+    padding: $spacing-sm $spacing-base;
+    gap: $spacing-sm;
+  }
+
+  &__selector-text {
+    font-family: $font-body;
+    font-size: 13px;
+    font-weight: 500;
+    color: $text-primary;
+  }
+
+  &__next {
+    background: $accent-gold;
+    padding: $spacing-sm $spacing-base;
+    gap: 6px;
+  }
+
+  &__next-text {
+    font-family: $font-body;
+    font-size: 13px;
+    font-weight: 500;
+    color: $bg-dark;
+  }
+}
+
+@media (max-width: 768px) {
+  .chapter-nav {
+    gap: $spacing-sm;
+
+    &__prev,
+    &__next,
+    &__selector {
+      padding: 6px $spacing-md;
+    }
+
+    &__prev-text,
+    &__next-text,
+    &__selector-text {
+      font-size: 12px;
+    }
+  }
+}

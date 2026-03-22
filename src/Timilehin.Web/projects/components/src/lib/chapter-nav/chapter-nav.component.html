@@ -1,0 +1,14 @@
+<div class="chapter-nav">
+  <button class="chapter-nav__prev" [disabled]="!hasPrevious()" (click)="previousClicked.emit()">
+    <ng-content select="[prevIcon]"></ng-content>
+    <span class="chapter-nav__prev-text">Previous</span>
+  </button>
+  <button class="chapter-nav__selector" (click)="chapterSelected.emit()">
+    <span class="chapter-nav__selector-text">Chapter {{ currentChapter() }} of {{ totalChapters() }}</span>
+    <ng-content select="[dropdownIcon]"></ng-content>
+  </button>
+  <button class="chapter-nav__next" [disabled]="!hasNext()" (click)="nextClicked.emit()">
+    <span class="chapter-nav__next-text">Next</span>
+    <ng-content select="[nextIcon]"></ng-content>
+  </button>
+</div>

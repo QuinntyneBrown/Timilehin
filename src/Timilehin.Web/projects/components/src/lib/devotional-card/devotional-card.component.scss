@@ -1,0 +1,97 @@
+@use '../variables' as *;
+
+.devotional-card {
+  background: $bg-card;
+  border: 1px solid $border-light;
+  padding: $spacing-3xl;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+
+  &__title {
+    font-family: $font-display;
+    font-style: italic;
+    font-size: 32px;
+    color: $text-primary;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  &__scripture {
+    background: $bg-secondary;
+    padding: $spacing-base $spacing-lg;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: $spacing-sm;
+  }
+
+  &__scripture-text {
+    font-family: $font-body;
+    font-style: italic;
+    font-size: 14px;
+    color: $text-secondary;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  &__section-label {
+    font-family: $font-body;
+    font-size: 11px;
+    font-weight: 600;
+    color: $accent-gold;
+    letter-spacing: 1.5px;
+  }
+
+  &__reflection {
+    font-family: $font-body;
+    font-size: 16px;
+    color: $text-primary;
+    line-height: 1.8;
+  }
+
+  &__prayer {
+    background: $bg-hero;
+    padding: $spacing-xl;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  &__prayer-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $spacing-sm;
+  }
+
+  &__prayer-label {
+    font-family: $font-body;
+    font-size: 11px;
+    font-weight: 600;
+    color: $accent-gold;
+    letter-spacing: 1.5px;
+  }
+
+  &__prayer-text {
+    font-family: $font-body;
+    font-size: 14px;
+    color: $text-cream;
+    line-height: 1.7;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .devotional-card {
+    padding: $spacing-xl $spacing-lg;
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__reflection {
+      font-size: 14px;
+    }
+  }
+}

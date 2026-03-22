@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div class="navbar__brand">
+    <ng-content select="[logo]"></ng-content>
+    <span class="navbar__brand-name">{{ brandName() }}</span>
+  </div>
+  <div class="navbar__links">
+    @for (link of links(); track link.route) {
+      <a class="navbar__link" [class.navbar__link--active]="link.active" (click)="linkClicked.emit(link)">{{ link.label }}</a>
+    }
+  </div>
+  <button class="navbar__cta" (click)="ctaClicked.emit()">{{ ctaLabel() }}</button>
+  <button class="navbar__hamburger" (click)="menuToggled.emit()">
+    <ng-content select="[menuIcon]"></ng-content>
+  </button>
+</nav>

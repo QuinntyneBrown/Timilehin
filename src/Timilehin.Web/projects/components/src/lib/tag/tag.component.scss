@@ -1,0 +1,13 @@
+@use '../variables' as *;
+
+.tag {
+  display: inline-block;
+  background-color: rgba($accent-gold, 0.13);
+  color: $accent-gold;
+  font-family: $font-body;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  border-radius: 20px;
+}

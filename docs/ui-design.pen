@@ -1,0 +1,5679 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "frame",
+      "id": "aY3eb",
+      "x": 0,
+      "y": 0,
+      "name": "Desktop Homepage (1440px)",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "QGbnc",
+          "name": "Nav Bar",
+          "width": "fill_container",
+          "fill": "$bg-primary",
+          "padding": [
+            20,
+            56
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "RuIP4",
+              "name": "navLeft",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "Mqcdk",
+                  "name": "logoIcon",
+                  "width": 28,
+                  "height": 28,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "YIBgZ",
+                  "name": "logoText",
+                  "fill": "$text-primary",
+                  "content": "GraceWord",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 24,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mcNoF",
+              "name": "navLinks",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nHhAA",
+                  "name": "navHome",
+                  "fill": "$text-primary",
+                  "content": "Home",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "CfXwO",
+                  "name": "navBible",
+                  "fill": "$text-secondary",
+                  "content": "Read Bible",
+                  "fontFamily": "Inter",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "ZKXKR",
+                  "name": "navDevotionals",
+                  "fill": "$text-secondary",
+                  "content": "Devotionals",
+                  "fontFamily": "Inter",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "oHITN",
+                  "name": "navVerse",
+                  "fill": "$text-secondary",
+                  "content": "Verse of the Day",
+                  "fontFamily": "Inter",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "L3FCf",
+              "name": "navCta",
+              "fill": "$bg-dark",
+              "padding": [
+                12,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nwSmq",
+                  "name": "navCtaText",
+                  "fill": "$text-white",
+                  "content": "Start Reading",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tV28M",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "height": 480,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2D2B3D",
+                "position": 0
+              },
+              {
+                "color": "#1A1A2E",
+                "position": 0.6
+              },
+              {
+                "color": "#3D2B4D",
+                "position": 1
+              }
+            ]
+          },
+          "padding": [
+            0,
+            56
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "WprHX",
+              "name": "heroLeft",
+              "width": 560,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                56,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "iPVTT",
+                  "name": "heroTag",
+                  "fill": "#C8A96E22",
+                  "cornerRadius": 20,
+                  "padding": [
+                    6,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rWJGN",
+                      "name": "heroTagText",
+                      "fill": "$accent-gold",
+                      "content": "Your Daily Spiritual Companion",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ZQvIm",
+                  "name": "heroTitle",
+                  "fill": "$text-white",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "content": "Discover God's Word, Every Day",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 56,
+                  "letterSpacing": -2,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "vJC1X",
+                  "name": "heroDesc",
+                  "fill": "#B8B8CC",
+                  "textGrowth": "fixed-width",
+                  "width": 480,
+                  "content": "Read the Bible, explore daily devotionals, and find inspiration through the Verse of the Day. Your journey of faith starts here.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "p8KIW",
+                  "name": "heroBtns",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "6RBIQ",
+                      "name": "heroBtn1",
+                      "fill": "$accent-gold",
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "E6Od3",
+                          "name": "heroBtn1Text",
+                          "fill": "$bg-dark",
+                          "content": "Start Reading",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TgBSB",
+                      "name": "heroBtn2",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$accent-gold"
+                      },
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "icmnS",
+                          "name": "heroBtn2Text",
+                          "fill": "$accent-gold",
+                          "content": "Today's Devotional",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A0pFT",
+              "name": "Hero Image",
+              "clip": true,
+              "width": 420,
+              "height": 380,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1774210378507.png",
+                "mode": "fill"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "5rgCB",
+          "name": "Verse of the Day Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            64,
+            56
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ut1MM",
+              "name": "votdHeader",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lXem1",
+                  "name": "votdLabel",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "8inW9",
+                      "name": "votdIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "sun",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent-gold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "0olxS",
+                      "name": "votdLabelText",
+                      "fill": "$accent-gold",
+                      "content": "VERSE OF THE DAY",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Fxc6A",
+                  "name": "votdDate",
+                  "fill": "$text-muted",
+                  "content": "March 22, 2026",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iPrgz",
+              "name": "VOTD Card",
+              "width": 900,
+              "fill": "$bg-card",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                48,
+                56
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xJZEj",
+                  "name": "votdQuoteMark",
+                  "fill": "$accent-gold-light",
+                  "content": "“",
+                  "lineHeight": 0.5,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 84,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "PsTGn",
+                  "name": "votdText",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": 760,
+                  "content": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 28,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "fqlvQ",
+                  "name": "votdRef",
+                  "fill": "$accent-gold",
+                  "content": "— Jeremiah 29:11 (NIV)",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "lZIRi",
+                  "name": "votdActions",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zUZ6U",
+                      "name": "votdShare",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "LqTKx",
+                          "name": "votdShareIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "share-2",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-secondary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sx1AM",
+                          "name": "votdShareText",
+                          "fill": "$text-secondary",
+                          "content": "Share",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wauji",
+                      "name": "votdCopy",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "zQARD",
+                          "name": "votdCopyIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "copy",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-secondary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RQUKQ",
+                          "name": "votdCopyText",
+                          "fill": "$text-secondary",
+                          "content": "Copy",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "N7omv",
+          "name": "Features Section",
+          "width": "fill_container",
+          "gap": 32,
+          "padding": [
+            0,
+            56
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "WmYJY",
+              "name": "Bible Reader Teaser",
+              "width": "fill_container",
+              "fill": "$bg-secondary",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                40,
+                32
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "g1DkN",
+                  "name": "btIcon",
+                  "width": 48,
+                  "height": 48,
+                  "fill": "$accent-gold",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "HPFVL",
+                      "name": "btIconInner",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "book-open",
+                      "iconFontFamily": "lucide",
+                      "fill": "$bg-dark"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "wJBlz",
+                  "name": "btTitle",
+                  "fill": "$text-primary",
+                  "content": "Read the Bible",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 28,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "0A8Mn",
+                  "name": "btDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Explore the complete Bible with a clean, distraction-free reading experience. Navigate by book and chapter using our integrated reader powered by a free Bible API.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "10DBF",
+                  "name": "btBooks",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "k0beN",
+                      "name": "btBook1",
+                      "fill": "$bg-card",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tO1Z2",
+                          "name": "btBook1Text",
+                          "fill": "$text-primary",
+                          "content": "Genesis",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "k6wk7",
+                      "name": "btBook2",
+                      "fill": "$bg-card",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gnzYM",
+                          "name": "btBook2Text",
+                          "fill": "$text-primary",
+                          "content": "Psalms",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OjRf2",
+                      "name": "btBook3",
+                      "fill": "$bg-card",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HkEBd",
+                          "name": "btBook3Text",
+                          "fill": "$text-primary",
+                          "content": "John",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yTFox",
+                      "name": "btBook4",
+                      "fill": "$bg-card",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dA0OI",
+                          "name": "btBook4Text",
+                          "fill": "$text-primary",
+                          "content": "Romans",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mnOJp",
+                  "name": "btLink",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wV3yl",
+                      "name": "btLinkText",
+                      "fill": "$accent-gold",
+                      "content": "Start Reading",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mSnvi",
+                      "name": "btLinkArrow",
+                      "fill": "$accent-gold",
+                      "content": "→",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "V2P3s",
+              "name": "Devotional Highlight",
+              "width": "fill_container",
+              "fill": "$bg-secondary",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                40,
+                32
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NdYHv",
+                  "name": "dtIcon",
+                  "width": 48,
+                  "height": 48,
+                  "fill": "$accent-warm",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "4dYti",
+                      "name": "dtIconInner",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$bg-dark"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "DW6mw",
+                  "name": "dtTitle",
+                  "fill": "$text-primary",
+                  "content": "Daily Devotionals",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 28,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "IIkdD",
+                  "name": "dtDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Deepen your faith with daily devotional readings. Each entry includes a scripture reference, thoughtful reflection, and a prayer prompt to guide your spiritual journey.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "JlHHC",
+                  "name": "dtPreview",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CeySa",
+                      "name": "dtPrevLabel",
+                      "fill": "$accent-gold",
+                      "content": "TODAY'S DEVOTIONAL",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "8UcoJ",
+                      "name": "dtPrevTitle",
+                      "fill": "$text-primary",
+                      "content": "Walking in Faith",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 20,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z3HHS",
+                      "name": "dtPrevExcerpt",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Trust in the Lord with all your heart and lean not on your own understanding...",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "P1U57",
+                      "name": "dtPrevRef",
+                      "fill": "$accent-warm",
+                      "content": "Proverbs 3:5-6",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IUgLa",
+                  "name": "dtLink",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m3U2O",
+                      "name": "dtLinkText",
+                      "fill": "$accent-gold",
+                      "content": "Read More",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "POLny",
+                      "name": "dtLinkArrow",
+                      "fill": "$accent-gold",
+                      "content": "→",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "3IRSL",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "padding": [
+            40,
+            56
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "fz8LW",
+              "name": "footerLeft",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mFfuz",
+                  "name": "footerLogo",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "YLWpi",
+                      "name": "footerLogoIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "book-open",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent-gold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wUCcK",
+                      "name": "footerLogoText",
+                      "fill": "$text-white",
+                      "content": "GraceWord",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 18,
+                      "fontWeight": "700",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "rgbYn",
+                  "name": "footerCopy",
+                  "fill": "$text-muted",
+                  "content": "© 2026 GraceWord. All rights reserved.",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "5ESxa",
+              "name": "footerLinks",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Xzh11",
+                  "name": "footerL1",
+                  "fill": "$text-muted",
+                  "content": "Privacy Policy",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "iEAsk",
+                  "name": "footerL2",
+                  "fill": "$text-muted",
+                  "content": "Terms of Service",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "oD2zv",
+                  "name": "footerL3",
+                  "fill": "$text-muted",
+                  "content": "Contact",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "sfrLJ",
+              "name": "footerApi",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IW9FX",
+                  "name": "footerApiLabel",
+                  "fill": "$text-muted",
+                  "content": "Powered by",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "zbwxL",
+                  "name": "footerApiText",
+                  "fill": "$accent-gold",
+                  "content": "bible-api.com",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "fH6N3",
+      "x": 1540,
+      "y": 0,
+      "name": "Tablet Homepage (768px)",
+      "clip": true,
+      "width": 768,
+      "fill": "$bg-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "h2F1u",
+          "name": "Tablet Nav",
+          "width": "fill_container",
+          "fill": "$bg-primary",
+          "padding": [
+            16,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "9kdVC",
+              "name": "tNavLeft",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "XRrSE",
+                  "name": "tNavIcon",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "1ts22",
+                  "name": "tNavLogo",
+                  "fill": "$text-primary",
+                  "content": "GraceWord",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 20,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NJVuf",
+              "name": "tNavLinks",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bqxLT",
+                  "name": "tNavL1",
+                  "fill": "$text-primary",
+                  "content": "Home",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "FV67h",
+                  "name": "tNavL2",
+                  "fill": "$text-secondary",
+                  "content": "Read Bible",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "AwoDb",
+                  "name": "tNavL3",
+                  "fill": "$text-secondary",
+                  "content": "Devotionals",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "EVq7T",
+                  "name": "tNavL4",
+                  "fill": "$text-secondary",
+                  "content": "VOTD",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "4Amng",
+          "name": "Tablet Hero",
+          "width": "fill_container",
+          "height": 400,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2D2B3D",
+                "position": 0
+              },
+              {
+                "color": "#1A1A2E",
+                "position": 0.6
+              },
+              {
+                "color": "#3D2B4D",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            48,
+            32
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "WKnCN",
+              "name": "tHeroTag",
+              "fill": "#C8A96E22",
+              "cornerRadius": 20,
+              "padding": [
+                6,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Z1Ohv",
+                  "name": "tHeroTagText",
+                  "fill": "$accent-gold",
+                  "content": "Your Daily Spiritual Companion",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "yMpwt",
+              "name": "tHeroTitle",
+              "fill": "$text-white",
+              "textGrowth": "fixed-width",
+              "width": 500,
+              "content": "Discover God's Word, Every Day",
+              "lineHeight": 1.15,
+              "fontFamily": "Playfair Display",
+              "fontSize": 40,
+              "fontWeight": "normal",
+              "letterSpacing": -1,
+              "fontStyle": "italic"
+            },
+            {
+              "type": "text",
+              "id": "qBNH3",
+              "name": "tHeroDesc",
+              "fill": "#B8B8CC",
+              "textGrowth": "fixed-width",
+              "width": 500,
+              "content": "Read the Bible, explore daily devotionals, and find inspiration through the Verse of the Day.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "TmsBf",
+              "name": "tHeroBtns",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sjQZy",
+                  "name": "tHeroBtn1",
+                  "fill": "$accent-gold",
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "csDdf",
+                      "name": "tHeroBtn1T",
+                      "fill": "$bg-dark",
+                      "content": "Start Reading",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ysEtw",
+                  "name": "tHeroBtn2",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$accent-gold"
+                  },
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Wo7hX",
+                      "name": "tHeroBtn2T",
+                      "fill": "$accent-gold",
+                      "content": "Today's Devotional",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "uTSMU",
+          "name": "Tablet VOTD",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            32
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "n4dKi",
+              "name": "tVotdHeader",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "Ya9WC",
+                  "name": "tVotdIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "sun",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "drNHs",
+                  "name": "tVotdLabel",
+                  "fill": "$accent-gold",
+                  "content": "VERSE OF THE DAY",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QWupF",
+              "name": "tVotdCard",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                36,
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vYfsn",
+                  "name": "tVotdQuote",
+                  "fill": "$accent-gold-light",
+                  "content": "“",
+                  "lineHeight": 0.5,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 64,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "y6dJp",
+                  "name": "tVotdText",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 22,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "QdU5M",
+                  "name": "tVotdRef",
+                  "fill": "$accent-gold",
+                  "content": "— Jeremiah 29:11 (NIV)",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "F0Yym",
+                  "name": "tVotdActions",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VlE4u",
+                      "name": "tVotdShare",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "gap": 6,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "vOBHK",
+                          "name": "tVotdShareI",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "share-2",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-secondary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "EXdei",
+                          "name": "tVotdShareT",
+                          "fill": "$text-secondary",
+                          "content": "Share",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gxYrQ",
+                      "name": "tVotdCopyB",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "gap": 6,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Ec8J7",
+                          "name": "tVotdCopyI",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "copy",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-secondary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qAzY0",
+                          "name": "tVotdCopyT",
+                          "fill": "$text-secondary",
+                          "content": "Copy",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "68u6l",
+          "name": "Tablet Features",
+          "width": "fill_container",
+          "gap": 24,
+          "padding": [
+            0,
+            32
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "OFazl",
+              "name": "Tablet Bible Teaser",
+              "width": "fill_container",
+              "fill": "$bg-secondary",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                32,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Arb7C",
+                  "name": "tBibleIcon",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$accent-gold",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "00d6i",
+                      "name": "tBibleIconI",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "book-open",
+                      "iconFontFamily": "lucide",
+                      "fill": "$bg-dark"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "rfbDk",
+                  "name": "tBibleTitle",
+                  "fill": "$text-primary",
+                  "content": "Read the Bible",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 22,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "OfLah",
+                  "name": "tBibleDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Explore the complete Bible with a clean reading experience powered by a free Bible API.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "hwAd8",
+                  "name": "tBibleLink",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SuydA",
+                      "name": "tBibleLT",
+                      "fill": "$accent-gold",
+                      "content": "Start Reading →",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fXNu7",
+              "name": "Tablet Devotional Teaser",
+              "width": "fill_container",
+              "fill": "$bg-secondary",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                32,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Yx4Pj",
+                  "name": "tDevIcon",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$accent-warm",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "ZlbNy",
+                      "name": "tDevIconI",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$bg-dark"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "bgBJq",
+                  "name": "tDevTitle",
+                  "fill": "$text-primary",
+                  "content": "Daily Devotionals",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 22,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "kqDVa",
+                  "name": "tDevDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Deepen your faith with daily devotional readings, reflections, and prayer prompts.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "KpWac",
+                  "name": "tDevLink",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Uxej2",
+                      "name": "tDevLT",
+                      "fill": "$accent-gold",
+                      "content": "Read More →",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TECwm",
+          "name": "Tablet Footer",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 32,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "buRz9",
+              "name": "tFooterTop",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "HeN1w",
+                  "name": "tFooterIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "nozQ2",
+                  "name": "tFooterLogo",
+                  "fill": "$text-white",
+                  "content": "GraceWord",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 16,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nCyTp",
+              "name": "tFooterLinks",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Hltcb",
+                  "name": "tFL1",
+                  "fill": "$text-muted",
+                  "content": "Privacy",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "vtizO",
+                  "name": "tFL2",
+                  "fill": "$text-muted",
+                  "content": "Terms",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Gab7K",
+                  "name": "tFL3",
+                  "fill": "$text-muted",
+                  "content": "Contact",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Y76Ob",
+              "name": "tFooterCopy",
+              "fill": "$text-muted",
+              "content": "© 2026 GraceWord. Powered by bible-api.com",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "6j58D",
+      "x": 2408,
+      "y": 0,
+      "name": "Mobile Homepage (375px)",
+      "clip": true,
+      "width": 375,
+      "fill": "$bg-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "y88k4",
+          "name": "Mobile Nav",
+          "width": "fill_container",
+          "fill": "$bg-primary",
+          "padding": [
+            14,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "XjvUZ",
+              "name": "mNavLeft",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "vEDCG",
+                  "name": "mNavIcon",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "hsJcv",
+                  "name": "mNavLogo",
+                  "fill": "$text-primary",
+                  "content": "GraceWord",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 18,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "icon_font",
+              "id": "Ow5Mj",
+              "name": "mNavHamburger",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "menu",
+              "iconFontFamily": "lucide",
+              "fill": "$text-primary"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hjl3E",
+          "name": "Mobile Hero",
+          "width": "fill_container",
+          "height": 360,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2D2B3D",
+                "position": 0
+              },
+              {
+                "color": "#1A1A2E",
+                "position": 0.6
+              },
+              {
+                "color": "#3D2B4D",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            40,
+            20
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "O2iP2",
+              "name": "mHeroTag",
+              "fill": "#C8A96E22",
+              "cornerRadius": 16,
+              "padding": [
+                5,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "6sZmE",
+                  "name": "mHeroTagT",
+                  "fill": "$accent-gold",
+                  "content": "Daily Spiritual Companion",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "M2Oxa",
+              "name": "mHeroTitle",
+              "fill": "$text-white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Discover God's Word, Every Day",
+              "lineHeight": 1.15,
+              "fontFamily": "Playfair Display",
+              "fontSize": 32,
+              "fontWeight": "normal",
+              "letterSpacing": -1,
+              "fontStyle": "italic"
+            },
+            {
+              "type": "text",
+              "id": "djcbb",
+              "name": "mHeroDesc",
+              "fill": "#B8B8CC",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Read the Bible, explore devotionals, and find daily inspiration.",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "oHU0Q",
+              "name": "mHeroBtn",
+              "fill": "$accent-gold",
+              "padding": [
+                14,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "36Rcj",
+                  "name": "mHeroBtnT",
+                  "fill": "$bg-dark",
+                  "content": "Start Reading",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "6gpgE",
+          "name": "Mobile VOTD",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            40,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "wjW8O",
+              "name": "mVotdLabel",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "yGb1a",
+                  "name": "mVotdIcon",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "sun",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "YDJmz",
+                  "name": "mVotdLabelT",
+                  "fill": "$accent-gold",
+                  "content": "VERSE OF THE DAY",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3fzwl",
+              "name": "mVotdCard",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                28,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Kh7cz",
+                  "name": "mVotdQ",
+                  "fill": "$accent-gold-light",
+                  "content": "“",
+                  "lineHeight": 0.5,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 48,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "5eQNJ",
+                  "name": "mVotdText",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 18,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "RBVVr",
+                  "name": "mVotdRef",
+                  "fill": "$accent-gold",
+                  "content": "— Jeremiah 29:11",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "8khfu",
+                  "name": "mVotdActions",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dgMIj",
+                      "name": "mVShare",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "gap": 4,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "1MPQ1",
+                          "name": "mVShareI",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "share-2",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-secondary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "A58UQ",
+                          "name": "mVShareT",
+                          "fill": "$text-secondary",
+                          "content": "Share",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g7PHP",
+                      "name": "mVCopy",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "gap": 4,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Vtg38",
+                          "name": "mVCopyI",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "copy",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-secondary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Vktzr",
+                          "name": "mVCopyT",
+                          "fill": "$text-secondary",
+                          "content": "Copy",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "uP3yC",
+          "name": "Mobile Features",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            0,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "baYWk",
+              "name": "mBible",
+              "width": "fill_container",
+              "fill": "$bg-secondary",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": [
+                24,
+                20
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QGjVC",
+                  "name": "mBibleIcon",
+                  "width": 36,
+                  "height": 36,
+                  "fill": "$accent-gold",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Bw0Qs",
+                      "name": "mBibleIconI",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "book-open",
+                      "iconFontFamily": "lucide",
+                      "fill": "$bg-dark"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "TCKUP",
+                  "name": "mBibleTitle",
+                  "fill": "$text-primary",
+                  "content": "Read the Bible",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "h7VQA",
+                  "name": "mBibleDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Explore the complete Bible with a clean reading experience.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "WCQBu",
+                  "name": "mBibleLink",
+                  "fill": "$accent-gold",
+                  "content": "Start Reading →",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "D7sI8",
+              "name": "mDev",
+              "width": "fill_container",
+              "fill": "$bg-secondary",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": [
+                24,
+                20
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "2MxEv",
+                  "name": "mDevIcon",
+                  "width": 36,
+                  "height": 36,
+                  "fill": "$accent-warm",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "6II8L",
+                      "name": "mDevIconI",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$bg-dark"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "398s6",
+                  "name": "mDevTitle",
+                  "fill": "$text-primary",
+                  "content": "Daily Devotionals",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "SAkx3",
+                  "name": "mDevDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Deepen your faith with daily readings, reflections, and prayer prompts.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "eWaCx",
+                  "name": "mDevLink",
+                  "fill": "$accent-gold",
+                  "content": "Read More →",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "3Lnab",
+          "name": "Mobile Footer",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            28,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "bppjj",
+              "name": "mFooterLogo",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "aD1eY",
+                  "name": "mFooterIcon",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "NhvAh",
+                  "name": "mFooterLogoT",
+                  "fill": "$text-white",
+                  "content": "GraceWord",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "sWJpP",
+              "name": "mFooterLinks",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "k2LSK",
+                  "name": "mFL1",
+                  "fill": "$text-muted",
+                  "content": "Privacy",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "A7Lm2",
+                  "name": "mFL2",
+                  "fill": "$text-muted",
+                  "content": "Terms",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "dvLU7",
+                  "name": "mFL3",
+                  "fill": "$text-muted",
+                  "content": "Contact",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Zbvxx",
+              "name": "mFooterCopy",
+              "fill": "$text-muted",
+              "content": "© 2026 GraceWord",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "fvctj",
+      "x": 0,
+      "y": 1000,
+      "name": "Desktop Bible Reader",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$bg-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "vkA1R",
+          "name": "BR Nav",
+          "width": "fill_container",
+          "fill": "$bg-primary",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-light"
+          },
+          "padding": [
+            20,
+            56
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "cpEvh",
+              "name": "brNavLeft",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "lsXNI",
+                  "name": "brNavIcon",
+                  "width": 28,
+                  "height": 28,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "vkQKi",
+                  "name": "brNavLogo",
+                  "fill": "$text-primary",
+                  "content": "GraceWord",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 24,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WPO93",
+              "name": "brNavLinks",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vUnkU",
+                  "name": "brNL1",
+                  "fill": "$text-secondary",
+                  "content": "Home",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "0SZ51",
+                  "name": "brNL2",
+                  "fill": "$text-primary",
+                  "content": "Read Bible",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "SHN24",
+                  "name": "brNL3",
+                  "fill": "$text-secondary",
+                  "content": "Devotionals",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Eygao",
+                  "name": "brNL4",
+                  "fill": "$text-secondary",
+                  "content": "Verse of the Day",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GxxOM",
+          "name": "BR Body",
+          "width": "fill_container",
+          "height": 828,
+          "children": [
+            {
+              "type": "frame",
+              "id": "MOhgS",
+              "name": "Book Sidebar",
+              "width": 280,
+              "height": "fill_container",
+              "fill": "$bg-secondary",
+              "stroke": {
+                "thickness": {
+                  "right": 1
+                },
+                "fill": "$border-light"
+              },
+              "layout": "vertical",
+              "padding": [
+                24,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "2t4KF",
+                  "name": "sidebarHeader",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    0,
+                    20,
+                    16,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "slJo9",
+                      "name": "sidebarTitle",
+                      "fill": "$text-primary",
+                      "content": "Bible Books",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 20,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZLvZ1",
+                      "name": "sidebarSearch",
+                      "width": "fill_container",
+                      "fill": "$bg-card",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "bdvWe",
+                          "name": "searchIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "search",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-muted"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TrBd3",
+                          "name": "searchText",
+                          "fill": "$text-muted",
+                          "content": "Search books...",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "teUM4",
+                  "name": "otLabel",
+                  "width": "fill_container",
+                  "fill": "$bg-primary",
+                  "padding": [
+                    12,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "w5Ruz",
+                      "name": "otLabelT",
+                      "fill": "$text-muted",
+                      "content": "OLD TESTAMENT",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nkUQ8",
+                  "name": "bookList",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nsgq2",
+                      "name": "book1",
+                      "width": "fill_container",
+                      "fill": "$accent-gold",
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mYzTs",
+                          "name": "book1T",
+                          "fill": "$bg-dark",
+                          "content": "Genesis",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "H9oe7",
+                          "name": "book1A",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "chevron-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "$bg-dark"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JuG3H",
+                      "name": "book2",
+                      "width": "fill_container",
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n50Yd",
+                          "name": "book2T",
+                          "fill": "$text-primary",
+                          "content": "Exodus",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GDR4P",
+                      "name": "book3",
+                      "width": "fill_container",
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wi7ia",
+                          "name": "book3T",
+                          "fill": "$text-primary",
+                          "content": "Leviticus",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "4GBP6",
+                      "name": "book4",
+                      "width": "fill_container",
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hjFou",
+                          "name": "book4T",
+                          "fill": "$text-primary",
+                          "content": "Numbers",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "E0Wok",
+                      "name": "book5",
+                      "width": "fill_container",
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zQnXd",
+                          "name": "book5T",
+                          "fill": "$text-primary",
+                          "content": "Deuteronomy",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jKJ8w",
+              "name": "Reading Pane",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$bg-card",
+              "layout": "vertical",
+              "gap": 32,
+              "padding": [
+                32,
+                64
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WckSf",
+                  "name": "rpHeader",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jietn",
+                      "name": "rpTitle",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Ysi2w",
+                          "name": "rpBookTitle",
+                          "fill": "$text-primary",
+                          "content": "Genesis",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 36,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TdORX",
+                          "name": "rpChapter",
+                          "fill": "$text-muted",
+                          "content": "Chapter 1",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "3lVdO",
+                      "name": "rpChapNav",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "j35MB",
+                          "name": "rpPrev",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border-light"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            8,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "cZaYO",
+                              "name": "rpPrevIcon",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "chevron-left",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-secondary"
+                            },
+                            {
+                              "type": "text",
+                              "id": "7Izwv",
+                              "name": "rpPrevT",
+                              "fill": "$text-secondary",
+                              "content": "Previous",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "1somH",
+                          "name": "rpChapSelect",
+                          "fill": "$bg-secondary",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border-light"
+                          },
+                          "gap": 8,
+                          "padding": [
+                            8,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vRRgd",
+                              "name": "rpChapNum",
+                              "fill": "$text-primary",
+                              "content": "Chapter 1 of 50",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "HlFNr",
+                              "name": "rpChapDD",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "1P8ec",
+                          "name": "rpNext",
+                          "fill": "$accent-gold",
+                          "gap": 6,
+                          "padding": [
+                            8,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "5hMUZ",
+                              "name": "rpNextT",
+                              "fill": "$bg-dark",
+                              "content": "Next",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "manrb",
+                              "name": "rpNextIcon",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "chevron-right",
+                              "iconFontFamily": "lucide",
+                              "fill": "$bg-dark"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "id": "xD4KH",
+                  "name": "rpDivider",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "J3NLM",
+                  "name": "Verse Content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": [
+                    0,
+                    40,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SDjre",
+                      "name": "v1",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yaEhs",
+                          "name": "v1num",
+                          "fill": "$accent-gold",
+                          "content": "1",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CxMEl",
+                          "name": "v1text",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "In the beginning God created the heaven and the earth.",
+                          "lineHeight": 1.8,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tvfPn",
+                      "name": "v2",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FpFB9",
+                          "name": "v2num",
+                          "fill": "$accent-gold",
+                          "content": "2",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "A09PU",
+                          "name": "v2text",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "And the earth was without form, and void; and darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters.",
+                          "lineHeight": 1.8,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8EPu7",
+                      "name": "v3",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XWKcX",
+                          "name": "v3num",
+                          "fill": "$accent-gold",
+                          "content": "3",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ctuKI",
+                          "name": "v3text",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "And God said, Let there be light: and there was light.",
+                          "lineHeight": 1.8,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LY6Eh",
+                      "name": "v4",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qJiLe",
+                          "name": "v4num",
+                          "fill": "$accent-gold",
+                          "content": "4",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ofE84",
+                          "name": "v4text",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "And God saw the light, that it was good: and God divided the light from the darkness.",
+                          "lineHeight": 1.8,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nxNh1",
+                      "name": "v5",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NElHV",
+                          "name": "v5num",
+                          "fill": "$accent-gold",
+                          "content": "5",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "5KU92",
+                          "name": "v5text",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "And God called the light Day, and the darkness he called Night. And the evening and the morning were the first day.",
+                          "lineHeight": 1.8,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "6Wbqu",
+                  "name": "apiNote",
+                  "width": "fill_container",
+                  "fill": "$bg-secondary",
+                  "gap": 8,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "5eGlj",
+                      "name": "apiIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "info",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-muted"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EFbWU",
+                      "name": "apiText",
+                      "fill": "$text-muted",
+                      "content": "Bible text provided by bible-api.com — a free, open Bible API",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "D8TGj",
+      "x": 1540,
+      "y": 1000,
+      "name": "Tablet Bible Reader",
+      "clip": true,
+      "width": 768,
+      "height": 1024,
+      "fill": "$bg-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "GK8X1",
+          "name": "TB Nav",
+          "width": "fill_container",
+          "fill": "$bg-primary",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-light"
+          },
+          "padding": [
+            16,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ERkww",
+              "name": "tbNavLeft",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "jjw7F",
+                  "name": "tbNavIcon",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "ZTJ3D",
+                  "name": "tbNavLogo",
+                  "fill": "$text-primary",
+                  "content": "GraceWord",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 18,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TSjEv",
+              "name": "tbNavLinks",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "LR3gs",
+                  "name": "tbNL1",
+                  "fill": "$text-secondary",
+                  "content": "Home",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "8Q4xb",
+                  "name": "tbNL2",
+                  "fill": "$text-primary",
+                  "content": "Read Bible",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "pLpAk",
+                  "name": "tbNL3",
+                  "fill": "$text-secondary",
+                  "content": "Devotionals",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JlYX6",
+          "name": "Book Bar",
+          "width": "fill_container",
+          "fill": "$bg-secondary",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-light"
+          },
+          "gap": 12,
+          "padding": [
+            12,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "8b9I1",
+              "name": "tbBookDD",
+              "fill": "$bg-card",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "gap": 6,
+              "padding": [
+                8,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MN9H0",
+                  "name": "tbBookDDT",
+                  "fill": "$text-primary",
+                  "content": "Genesis",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "2IkLM",
+                  "name": "tbBookDDI",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "chevron-down",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-secondary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c75lq",
+              "name": "tbChapDD",
+              "fill": "$bg-card",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "gap": 6,
+              "padding": [
+                8,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ka7Xh",
+                  "name": "tbChapDDT",
+                  "fill": "$text-primary",
+                  "content": "Chapter 1",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "Cxhn8",
+                  "name": "tbChapDDI",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "chevron-down",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-secondary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "teGGn",
+          "name": "TB Reading",
+          "width": "fill_container",
+          "fill": "$bg-card",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            28,
+            32
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "d5eJn",
+              "name": "tbTitle",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DKjXN",
+                  "name": "tbTitleLeft",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "7Pu3W",
+                      "name": "tbBookName",
+                      "fill": "$text-primary",
+                      "content": "Genesis",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 28,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wDDVh",
+                      "name": "tbChapName",
+                      "fill": "$text-muted",
+                      "content": "Chapter 1",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MLvNH",
+                  "name": "tbChapBtns",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Hu0jq",
+                      "name": "tbPrevBtn",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "gap": 4,
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "sdy47",
+                          "name": "tbPrevI",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "chevron-left",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-secondary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "55Mkr",
+                          "name": "tbPrevT",
+                          "fill": "$text-secondary",
+                          "content": "Prev",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xoFIq",
+                      "name": "tbNextBtn",
+                      "fill": "$accent-gold",
+                      "gap": 4,
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Cqs9F",
+                          "name": "tbNextT",
+                          "fill": "$bg-dark",
+                          "content": "Next",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "oBU2d",
+                          "name": "tbNextI",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "chevron-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "$bg-dark"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "line",
+              "id": "9n7PV",
+              "name": "tbDiv",
+              "width": "fill_container",
+              "height": 0,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-light"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "VoTB9",
+              "name": "tbVerses",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "F1ZzF",
+                  "name": "tbV1",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Z1bR3",
+                      "name": "tbV1n",
+                      "fill": "$accent-gold",
+                      "content": "1",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "psUtr",
+                      "name": "tbV1t",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "In the beginning God created the heaven and the earth.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WM3wn",
+                  "name": "tbV2",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "aiFBs",
+                      "name": "tbV2n",
+                      "fill": "$accent-gold",
+                      "content": "2",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BOBVJ",
+                      "name": "tbV2t",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "And the earth was without form, and void; and darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "K2J0j",
+                  "name": "tbV3",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "L3cur",
+                      "name": "tbV3n",
+                      "fill": "$accent-gold",
+                      "content": "3",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YlWza",
+                      "name": "tbV3t",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "And God said, Let there be light: and there was light.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ye4Fl",
+                  "name": "tbV4",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Mt2jF",
+                      "name": "tbV4n",
+                      "fill": "$accent-gold",
+                      "content": "4",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "HJMdK",
+                      "name": "tbV4t",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "And God saw the light, that it was good: and God divided the light from the darkness.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xjvo9",
+                  "name": "tbV5",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DP1b9",
+                      "name": "tbV5n",
+                      "fill": "$accent-gold",
+                      "content": "5",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FXBVc",
+                      "name": "tbV5t",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "And God called the light Day, and the darkness he called Night. And the evening and the morning were the first day.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OmRNQ",
+              "name": "tbApi",
+              "width": "fill_container",
+              "fill": "$bg-secondary",
+              "gap": 6,
+              "padding": [
+                10,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "Nu49u",
+                  "name": "tbApiI",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "info",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-muted"
+                },
+                {
+                  "type": "text",
+                  "id": "aPLkO",
+                  "name": "tbApiT",
+                  "fill": "$text-muted",
+                  "content": "Bible text provided by bible-api.com",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DZNcx",
+      "x": 2408,
+      "y": 1000,
+      "name": "Mobile Bible Reader",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "$bg-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "U8SGn",
+          "name": "MB Nav",
+          "width": "fill_container",
+          "fill": "$bg-primary",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-light"
+          },
+          "padding": [
+            12,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "V6MnN",
+              "name": "mbNavLeft",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "Uze0p",
+                  "name": "mbNavIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "KAOW7",
+                  "name": "mbNavLogo",
+                  "fill": "$text-primary",
+                  "content": "GraceWord",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 16,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "icon_font",
+              "id": "zqrrT",
+              "name": "mbNavHam",
+              "width": 22,
+              "height": 22,
+              "iconFontName": "menu",
+              "iconFontFamily": "lucide",
+              "fill": "$text-primary"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "d0wJ0",
+          "name": "MB Book Bar",
+          "width": "fill_container",
+          "fill": "$bg-secondary",
+          "gap": 8,
+          "padding": [
+            10,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "HTSRU",
+              "name": "mbBookDD",
+              "fill": "$bg-card",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "gap": 4,
+              "padding": [
+                6,
+                10
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kH3Bu",
+                  "name": "mbBookDDT",
+                  "fill": "$text-primary",
+                  "content": "Genesis",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "i4ne6",
+                  "name": "mbBookDDI",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-down",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-secondary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "afwrV",
+              "name": "mbChapDD",
+              "fill": "$bg-card",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "gap": 4,
+              "padding": [
+                6,
+                10
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sCd5d",
+                  "name": "mbChapDDT",
+                  "fill": "$text-primary",
+                  "content": "Ch. 1",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "ucoSb",
+                  "name": "mbChapDDI",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-down",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-secondary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "W3qJX",
+          "name": "MB Reading",
+          "width": "fill_container",
+          "fill": "$bg-card",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            20,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "jBrEY",
+              "name": "mbRTitle",
+              "fill": "$text-primary",
+              "content": "Genesis 1",
+              "fontFamily": "Playfair Display",
+              "fontSize": 24,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            },
+            {
+              "type": "line",
+              "id": "2pmXm",
+              "name": "mbRDiv",
+              "width": "fill_container",
+              "height": 0,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-light"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "yIjMf",
+              "name": "mbVerses",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zuLEO",
+                  "name": "mbV1",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jePOq",
+                      "name": "mbV1n",
+                      "fill": "$accent-gold",
+                      "content": "1",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DBVfX",
+                      "name": "mbV1t",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "In the beginning God created the heaven and the earth.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HciE8",
+                  "name": "mbV2",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Jt9hN",
+                      "name": "mbV2n",
+                      "fill": "$accent-gold",
+                      "content": "2",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cNC9g",
+                      "name": "mbV2t",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "And the earth was without form, and void; and darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "E6b77",
+                  "name": "mbV3",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Qk9rH",
+                      "name": "mbV3n",
+                      "fill": "$accent-gold",
+                      "content": "3",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RKhlm",
+                      "name": "mbV3t",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "And God said, Let there be light: and there was light.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kElLw",
+                  "name": "mbV4",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JPpPS",
+                      "name": "mbV4n",
+                      "fill": "$accent-gold",
+                      "content": "4",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "M8QSs",
+                      "name": "mbV4t",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "And God saw the light, that it was good: and God divided the light from the darkness.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "1xY0O",
+                  "name": "mbV5",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2FqZ5",
+                      "name": "mbV5n",
+                      "fill": "$accent-gold",
+                      "content": "5",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EtMRn",
+                      "name": "mbV5t",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "And God called the light Day, and the darkness he called Night. And the evening and the morning were the first day.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QtBZu",
+              "name": "mbChapBtns",
+              "width": "fill_container",
+              "gap": 8,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "fJlTL",
+                  "name": "mbPrevB",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  },
+                  "gap": 4,
+                  "padding": [
+                    10,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "eKVoR",
+                      "name": "mbPrevI",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "chevron-left",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-secondary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LQBFv",
+                      "name": "mbPrevT",
+                      "fill": "$text-secondary",
+                      "content": "Previous",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "5sXqe",
+                  "name": "mbNextB",
+                  "fill": "$accent-gold",
+                  "gap": 4,
+                  "padding": [
+                    10,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HsN2g",
+                      "name": "mbNextT",
+                      "fill": "$bg-dark",
+                      "content": "Next Chapter",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "H8TEP",
+                      "name": "mbNextI",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "chevron-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "$bg-dark"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "fPulN",
+      "x": 0,
+      "y": 2100,
+      "name": "Desktop Devotionals",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "yfN32",
+          "name": "Dev Nav",
+          "width": "fill_container",
+          "fill": "$bg-primary",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-light"
+          },
+          "padding": [
+            20,
+            56
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ebvVt",
+              "name": "dNavLeft",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "b3wEz",
+                  "name": "dNavIcon",
+                  "width": 28,
+                  "height": 28,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "xyCgl",
+                  "name": "dNavLogo",
+                  "fill": "$text-primary",
+                  "content": "GraceWord",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 24,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mgcl2",
+              "name": "dNavLinks",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ugz4l",
+                  "name": "dNL1",
+                  "fill": "$text-secondary",
+                  "content": "Home",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "yPdX3",
+                  "name": "dNL2",
+                  "fill": "$text-secondary",
+                  "content": "Read Bible",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "qmauD",
+                  "name": "dNL3",
+                  "fill": "$text-primary",
+                  "content": "Devotionals",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "KRo5a",
+                  "name": "dNL4",
+                  "fill": "$text-secondary",
+                  "content": "Verse of the Day",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VaN8W",
+          "name": "Dev Body",
+          "width": "fill_container",
+          "gap": 40,
+          "padding": [
+            40,
+            56
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "z35gO",
+              "name": "Today Devotional",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CP3ze",
+                  "name": "todayHeader",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "9gXBL",
+                      "name": "todayLabel",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "COHxJ",
+                          "name": "todayLIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "heart",
+                          "iconFontFamily": "lucide",
+                          "fill": "$accent-warm"
+                        },
+                        {
+                          "type": "text",
+                          "id": "00358",
+                          "name": "todayLText",
+                          "fill": "$accent-warm",
+                          "content": "TODAY'S DEVOTIONAL",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "QgL0R",
+                      "name": "todayDate",
+                      "fill": "$text-muted",
+                      "content": "March 22, 2026",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lb5hy",
+                  "name": "todayCard",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9Dlo5",
+                      "name": "todayTitle",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Walking in Faith: Trusting God's Plan",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 32,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2RrQu",
+                      "name": "todayScripture",
+                      "width": "fill_container",
+                      "fill": "$bg-secondary",
+                      "gap": 8,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "1QxKT",
+                          "name": "todaySIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "book-open",
+                          "iconFontFamily": "lucide",
+                          "fill": "$accent-gold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "BgnqN",
+                          "name": "todaySText",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Proverbs 3:5-6 — \"Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.\"",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "n9i9g",
+                      "name": "todayReflLabel",
+                      "fill": "$accent-gold",
+                      "content": "REFLECTION",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "dgV3T",
+                      "name": "todayReflText",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Faith is not about having all the answers. It's about trusting the One who does. In our daily walk, we encounter moments of uncertainty, crossroads where the path forward isn't clear. It is in these very moments that our faith is refined.\n\nThe writer of Proverbs invites us to release our grip on self-sufficiency and instead lean into God's wisdom. This isn't passive surrender—it's an active choice to acknowledge God's sovereignty in every decision, every relationship, and every challenge we face.\n\nToday, consider the areas of your life where you've been relying solely on your own understanding. What would it look like to truly submit those areas to God?",
+                      "lineHeight": 1.8,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AjYPa",
+                      "name": "prayerSection",
+                      "width": "fill_container",
+                      "fill": "$bg-hero",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tWW2a",
+                          "name": "prayerLabel",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "4b57L",
+                              "name": "prayerIcon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "hand-heart",
+                              "iconFontFamily": "lucide",
+                              "fill": "$accent-gold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "JLs1R",
+                              "name": "prayerLabelT",
+                              "fill": "$accent-gold",
+                              "content": "PRAYER PROMPT",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "600",
+                              "letterSpacing": 1.5
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "sb0dU",
+                          "name": "prayerText",
+                          "fill": "$text-cream",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Lord, I surrender my plans and my understanding to You today. Help me to trust in Your wisdom above my own, and guide my steps along the path You have prepared for me. Give me the courage to walk by faith, even when I cannot see the way ahead. Amen.",
+                          "lineHeight": 1.7,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zjBRu",
+              "name": "Devotional Archive",
+              "width": 380,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FWIye",
+                  "name": "archiveHeader",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cL98Q",
+                      "name": "archiveTitle",
+                      "fill": "$text-primary",
+                      "content": "Past Devotionals",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 22,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JLeCr",
+                      "name": "archiveAll",
+                      "fill": "$accent-gold",
+                      "content": "View All →",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EY7c6",
+                  "name": "archiveList",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "6fdvO",
+                      "name": "arch1",
+                      "width": "fill_container",
+                      "fill": "$bg-card",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "My2Z9",
+                          "name": "arch1Date",
+                          "fill": "$text-muted",
+                          "content": "March 21, 2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "f2JrI",
+                          "name": "arch1Title",
+                          "fill": "$text-primary",
+                          "content": "The Strength in Stillness",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yPI1n",
+                          "name": "arch1Excerpt",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Be still and know that I am God. In a world that never stops moving...",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tuEvI",
+                          "name": "arch1Ref",
+                          "fill": "$accent-warm",
+                          "content": "Psalm 46:10",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hxKPI",
+                      "name": "arch2",
+                      "width": "fill_container",
+                      "fill": "$bg-card",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "AuHcS",
+                          "name": "arch2Date",
+                          "fill": "$text-muted",
+                          "content": "March 20, 2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mkGu8",
+                          "name": "arch2Title",
+                          "fill": "$text-primary",
+                          "content": "Joy in the Journey",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PaFDq",
+                          "name": "arch2Excerpt",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Consider it pure joy whenever you face trials of many kinds...",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dE6tx",
+                          "name": "arch2Ref",
+                          "fill": "$accent-warm",
+                          "content": "James 1:2-4",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RkoCt",
+                      "name": "arch3",
+                      "width": "fill_container",
+                      "fill": "$bg-card",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KpQWd",
+                          "name": "arch3Date",
+                          "fill": "$text-muted",
+                          "content": "March 19, 2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PspDA",
+                          "name": "arch3Title",
+                          "fill": "$text-primary",
+                          "content": "Grace for Today",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GWYYK",
+                          "name": "arch3Excerpt",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "My grace is sufficient for you, for my power is made perfect...",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "A5P6y",
+                          "name": "arch3Ref",
+                          "fill": "$accent-warm",
+                          "content": "2 Corinthians 12:9",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZP5MB",
+                      "name": "archMore",
+                      "width": "fill_container",
+                      "padding": [
+                        14,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nZNh1",
+                          "name": "archMoreT",
+                          "fill": "$accent-gold",
+                          "content": "Load More Devotionals",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "yLajv",
+      "x": 1540,
+      "y": 2100,
+      "name": "Tablet Devotionals",
+      "clip": true,
+      "width": 768,
+      "fill": "$bg-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "aAKEg",
+          "name": "TD Nav",
+          "width": "fill_container",
+          "fill": "$bg-primary",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-light"
+          },
+          "padding": [
+            16,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "L1HVm",
+              "name": "tdNavLeft",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "QPGYr",
+                  "name": "tdNavIcon",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "X0Orz",
+                  "name": "tdNavLogo",
+                  "fill": "$text-primary",
+                  "content": "GraceWord",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 18,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "m3w7z",
+              "name": "tdNavLinks",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iljpC",
+                  "name": "tdNL1",
+                  "fill": "$text-secondary",
+                  "content": "Home",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "GjWiN",
+                  "name": "tdNL2",
+                  "fill": "$text-secondary",
+                  "content": "Read Bible",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "JwZ1M",
+                  "name": "tdNL3",
+                  "fill": "$text-primary",
+                  "content": "Devotionals",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MlUoR",
+          "name": "TD Body",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            32,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "oOGzP",
+              "name": "tdHeader",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Sf0Ni",
+                  "name": "tdLabel",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "q4LVV",
+                      "name": "tdLIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent-warm"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FYxHA",
+                      "name": "tdLText",
+                      "fill": "$accent-warm",
+                      "content": "TODAY'S DEVOTIONAL",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "DyuRm",
+                  "name": "tdDate",
+                  "fill": "$text-muted",
+                  "content": "March 22, 2026",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "12tnh",
+              "name": "tdCard",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                32,
+                28
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jtIGE",
+                  "name": "tdTitle",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Walking in Faith: Trusting God's Plan",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 26,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "frame",
+                  "id": "G2HDX",
+                  "name": "tdScripture",
+                  "width": "fill_container",
+                  "fill": "$bg-secondary",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "d1zfg",
+                      "name": "tdSIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "book-open",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent-gold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "B2wrB",
+                      "name": "tdSText",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Proverbs 3:5-6 — \"Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.\"",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "moLRt",
+                  "name": "tdReflLabel",
+                  "fill": "$accent-gold",
+                  "content": "REFLECTION",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "600",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "xTlmm",
+                  "name": "tdReflText",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Faith is not about having all the answers. It's about trusting the One who does. In our daily walk, we encounter moments of uncertainty, crossroads where the path forward isn't clear.\n\nThe writer of Proverbs invites us to release our grip on self-sufficiency and instead lean into God's wisdom. Today, consider the areas of your life where you've been relying solely on your own understanding.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "FUPag",
+                  "name": "tdPrayer",
+                  "width": "fill_container",
+                  "fill": "$bg-hero",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tMT8k",
+                      "name": "tdPLabel",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "muq0v",
+                          "name": "tdPIcon",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "hand-heart",
+                          "iconFontFamily": "lucide",
+                          "fill": "$accent-gold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MM66O",
+                          "name": "tdPLabelT",
+                          "fill": "$accent-gold",
+                          "content": "PRAYER PROMPT",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "KKKt0",
+                      "name": "tdPText",
+                      "fill": "$text-cream",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Lord, I surrender my plans to You today. Guide my steps along the path You have prepared for me. Amen.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bL0En",
+              "name": "tdArchHeader",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "99Wwk",
+                  "name": "tdArchTitle",
+                  "fill": "$text-primary",
+                  "content": "Past Devotionals",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "6eo2T",
+                  "name": "tdArchAll",
+                  "fill": "$accent-gold",
+                  "content": "View All →",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "5wgPd",
+              "name": "tdArchGrid",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JkhKH",
+                  "name": "tdA1",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6tmjX",
+                      "name": "tdA1Date",
+                      "fill": "$text-muted",
+                      "content": "March 21",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "2pls8",
+                      "name": "tdA1Title",
+                      "fill": "$text-primary",
+                      "content": "The Strength in Stillness",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EKSVQ",
+                      "name": "tdA1Ref",
+                      "fill": "$accent-warm",
+                      "content": "Psalm 46:10",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "v7z1R",
+                  "name": "tdA2",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PelAc",
+                      "name": "tdA2Date",
+                      "fill": "$text-muted",
+                      "content": "March 20",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SMioa",
+                      "name": "tdA2Title",
+                      "fill": "$text-primary",
+                      "content": "Joy in the Journey",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "2JiRL",
+                      "name": "tdA2Ref",
+                      "fill": "$accent-warm",
+                      "content": "James 1:2-4",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "stwJp",
+      "x": 2408,
+      "y": 2100,
+      "name": "Mobile Devotionals",
+      "clip": true,
+      "width": 375,
+      "fill": "$bg-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "rma86",
+          "name": "MD Nav",
+          "width": "fill_container",
+          "fill": "$bg-primary",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-light"
+          },
+          "padding": [
+            12,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "QsT8j",
+              "name": "mdNavLeft",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "GXFgH",
+                  "name": "mdNavIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-gold"
+                },
+                {
+                  "type": "text",
+                  "id": "qB8yp",
+                  "name": "mdNavLogo",
+                  "fill": "$text-primary",
+                  "content": "GraceWord",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 16,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "icon_font",
+              "id": "EKO3o",
+              "name": "mdNavHam",
+              "width": 22,
+              "height": 22,
+              "iconFontName": "menu",
+              "iconFontFamily": "lucide",
+              "fill": "$text-primary"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "5xx01",
+          "name": "MD Body",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            24,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "6EvVM",
+              "name": "mdHeader",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qP0Zl",
+                  "name": "mdLabel",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "zqiJg",
+                      "name": "mdLIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent-warm"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WyXhE",
+                      "name": "mdLText",
+                      "fill": "$accent-warm",
+                      "content": "TODAY'S DEVOTIONAL",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "xYeor",
+                  "name": "mdDate",
+                  "fill": "$text-muted",
+                  "content": "March 22, 2026",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Algew",
+              "name": "mdCard",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                24,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "P3y5m",
+                  "name": "mdTitle",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Walking in Faith: Trusting God's Plan",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 22,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "frame",
+                  "id": "2xBNz",
+                  "name": "mdScripture",
+                  "width": "fill_container",
+                  "fill": "$bg-secondary",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    12,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XLePJ",
+                      "name": "mdSLabel",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "5TEdS",
+                          "name": "mdSIcon",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "book-open",
+                          "iconFontFamily": "lucide",
+                          "fill": "$accent-gold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JDNJi",
+                          "name": "mdSRef",
+                          "fill": "$accent-gold",
+                          "content": "Proverbs 3:5-6",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "TQ1jM",
+                      "name": "mdSText",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "\"Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.\"",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Th7iq",
+                  "name": "mdReflLabel",
+                  "fill": "$accent-gold",
+                  "content": "REFLECTION",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "600",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "IQlkf",
+                  "name": "mdReflText",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Faith is not about having all the answers. It's about trusting the One who does. In our daily walk, we encounter moments of uncertainty, crossroads where the path forward isn't clear.\n\nThe writer of Proverbs invites us to release our grip on self-sufficiency and instead lean into God's wisdom.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "IK3P0",
+                  "name": "mdPrayer",
+                  "width": "fill_container",
+                  "fill": "$bg-hero",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "2BvuC",
+                      "name": "mdPLabel",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "frMGm",
+                          "name": "mdPIcon",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "hand-heart",
+                          "iconFontFamily": "lucide",
+                          "fill": "$accent-gold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qj66X",
+                          "name": "mdPLabelT",
+                          "fill": "$accent-gold",
+                          "content": "PRAYER PROMPT",
+                          "fontFamily": "Inter",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "TlR0U",
+                      "name": "mdPText",
+                      "fill": "$text-cream",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Lord, I surrender my plans to You today. Guide my steps along the path You have prepared for me. Amen.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AmzgM",
+              "name": "mdArchHeader",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5yQsP",
+                  "name": "mdArchTitle",
+                  "fill": "$text-primary",
+                  "content": "Past Devotionals",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 18,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "abpXL",
+                  "name": "mdArchAll",
+                  "fill": "$accent-gold",
+                  "content": "View All →",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UcTvg",
+              "name": "mdArchList",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Fxqrl",
+                  "name": "mdA1",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "7Z0vt",
+                      "name": "mdA1Date",
+                      "fill": "$text-muted",
+                      "content": "March 21, 2026",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BR8yd",
+                      "name": "mdA1Title",
+                      "fill": "$text-primary",
+                      "content": "The Strength in Stillness",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K8r68",
+                      "name": "mdA1Ref",
+                      "fill": "$accent-warm",
+                      "content": "Psalm 46:10",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "81VEl",
+                  "name": "mdA2",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ddiHZ",
+                      "name": "mdA2Date",
+                      "fill": "$text-muted",
+                      "content": "March 20, 2026",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bOZqs",
+                      "name": "mdA2Title",
+                      "fill": "$text-primary",
+                      "content": "Joy in the Journey",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cb63t",
+                      "name": "mdA2Ref",
+                      "fill": "$accent-warm",
+                      "content": "James 1:2-4",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "enPP9",
+                  "name": "mdMore",
+                  "width": "fill_container",
+                  "padding": [
+                    12,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eCVb4",
+                      "name": "mdMoreT",
+                      "fill": "$accent-gold",
+                      "content": "Load More",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-gold": {
+      "type": "color",
+      "value": "#C8A96E"
+    },
+    "accent-gold-light": {
+      "type": "color",
+      "value": "#E8D5A8"
+    },
+    "accent-warm": {
+      "type": "color",
+      "value": "#D4A574"
+    },
+    "bg-card": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "bg-dark": {
+      "type": "color",
+      "value": "#1A1A2E"
+    },
+    "bg-hero": {
+      "type": "color",
+      "value": "#2D2B3D"
+    },
+    "bg-primary": {
+      "type": "color",
+      "value": "#FFFAF5"
+    },
+    "bg-secondary": {
+      "type": "color",
+      "value": "#F7F0E8"
+    },
+    "border-dark": {
+      "type": "color",
+      "value": "#D0C8BE"
+    },
+    "border-light": {
+      "type": "color",
+      "value": "#E8E0D8"
+    },
+    "text-cream": {
+      "type": "color",
+      "value": "#FFF8F0"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#8A8A9E"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#1A1A2E"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#5A5A6E"
+    },
+    "text-white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    }
+  }
+}

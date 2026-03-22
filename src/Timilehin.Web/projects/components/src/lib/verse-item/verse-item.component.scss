@@ -1,0 +1,36 @@
+@use '../variables' as *;
+
+.verse-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: $spacing-md;
+  align-items: flex-start;
+
+  &__number {
+    font-family: $font-body;
+    font-size: 12px;
+    font-weight: 600;
+    color: $accent-gold;
+  }
+
+  &__text {
+    font-family: $font-display;
+    font-style: italic;
+    font-size: 18px;
+    color: $text-primary;
+    line-height: 1.8;
+    flex: 1;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .verse-item {
+    gap: $spacing-sm;
+
+    &__text {
+      font-size: 15px;
+    }
+  }
+}

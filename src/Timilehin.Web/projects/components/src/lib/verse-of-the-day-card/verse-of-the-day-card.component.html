@@ -1,0 +1,15 @@
+<div class="votd-card">
+  <span class="votd-card__quote-mark">&ldquo;</span>
+  <p class="votd-card__text">{{ verseText() }}</p>
+  <span class="votd-card__reference">&mdash; {{ reference() }}</span>
+  <div class="votd-card__actions">
+    <button class="votd-card__action" (click)="shareClicked.emit()">
+      <ng-content select="[shareIcon]"></ng-content>
+      <span class="votd-card__action-label">Share</span>
+    </button>
+    <button class="votd-card__action" (click)="copyClicked.emit()">
+      <ng-content select="[copyIcon]"></ng-content>
+      <span class="votd-card__action-label">Copy</span>
+    </button>
+  </div>
+</div>
