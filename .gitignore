@@ -487,3 +487,6 @@ $RECYCLE.BIN/
 
 # Playwright
 playwright-report/
+
+# Claude Code
+.claude/
