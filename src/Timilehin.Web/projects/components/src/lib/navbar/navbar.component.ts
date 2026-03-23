@@ -25,4 +25,5 @@ export class NavbarComponent {
   linkClicked = output<NavLink>();
   ctaClicked = output<void>();
   menuToggled = output<void>();
+  brandClicked = output<void>();
 }

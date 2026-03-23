@@ -52,4 +52,13 @@ test.describe('Homepage', () => {
     await homePage.clickNavLink('Devotionals');
     await expect(page).toHaveURL(/\/devotionals/);
   });
+
+  test('should navigate to homepage when clicking GraceWord brand name', async ({ page }) => {
+    await page.goto('/devotionals');
+    await page.waitForLoadState('networkidle');
+
+    await page.locator('.navbar__brand').click();
+    await page.waitForLoadState('networkidle');
+    await expect(page).toHaveURL(/\/$/);
+  });
 });

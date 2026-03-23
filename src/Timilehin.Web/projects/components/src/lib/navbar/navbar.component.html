@@ -1,5 +1,5 @@
 <nav class="navbar">
-  <div class="navbar__brand">
+  <div class="navbar__brand" (click)="brandClicked.emit()" style="cursor: pointer;">
     <ng-content select="[logo]"></ng-content>
     <span class="navbar__brand-name">{{ brandName() }}</span>
   </div>

@@ -38,4 +38,8 @@ export class App {
   onCtaClicked(): void {
     this.router.navigateByUrl('/bible');
   }
+
+  onBrandClicked(): void {
+    this.router.navigateByUrl('/');
+  }
 }
